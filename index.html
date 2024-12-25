@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+<!--     <link rel="stylesheet" href="store.css">
+    <script src="store.js"></script> -->
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: 'Satisfy', cursive; 
+  
+
+}
+
+.return1{
+    background-color: brown;
+    font-family: "Franklin Gothic Medium";
+}
+
+.return2{
+   opacity: "0.36";
+}
+
+P{
+    text-align: center;
+}
+.our{
+font-weight: bold;
+font-size: 2rem;
+}
+
+.store{
+
+    font-weight: bolder;
+    font-size: 4rem;
+    color: rgb(241, 14, 90);
+    }
+
+    .menu{
+        text-align: center;
+    }
+    .menu ul{
+        display: inline-flex;
+        list-style-type: none;
+    }
+
+    .menu ul li{
+    margin: 0.5px 30px;
+    border: 1px solid black;
+    padding: 0.5rem;
+    font-style: italic;
+    background-color: rgb(247, 229, 202);
+    
+    }
+
+    .searchbox{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       /* background: rgb(223, 191, 191);  */
+         margin: 0.5rem 30rem; 
+         border-radius: 1rem;
+         padding: 0.5rem;
+    
+    }
+
+    
+    .searchbox input{
+        /* background: transparent;  */
+        flex: 1;
+        /* border: 0; */
+        outline: none;
+        padding: 0.4rem 0.2rem;
+        font-size: 0.7rem;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    ::placeholder{
+        color: black;
+    }
+
+    .searchbox button{
+        background-color: rgb(235, 15, 52);
+        height: 1.9rem;
+        border: 0;
+        width: 2rem;
+        cursor: pointer;
+        
+    }
+
+    .features button{
+        margin-left: 2rem; 
+        color: rgb(247, 7, 87);
+        cursor: pointer;
+        
+    }
+    h2 {
+        font-size: large;
+        padding-left: 2rem;
+
+    }
+
+    
+
+    /* ====GUIDE FOR LARGE/IPAD RESPONSIVE==== */
+     @media all and (min-width:768px) {
+        .parent{
+            padding:1% 8%;
+            display: flex;
+            column-gap: 2rem;
+            flex-wrap: wrap;
+            row-gap: 2rem;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .parent .items figcaption .money{
+        margin-left: 10rem;
+    }
+       
+     }
+
+     /* ====GUIDE FOR MOBILE RESPONSIVE==== */
+     @media all and (max-width:767px) {
+        .parent{
+        
+            padding:11% 8%;
+            width: 100%;
+        }
+
+        .parent .items img{
+            width: 600px;
+        }
+
+        .parent .items figcaption{
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        .menu ul li{
+        margin: 1px 10px;
+        padding: 0.2rem;
+       
+        }
+        
+        .searchbox{
+
+            
+             padding: 0.5rem;
+            width: 20rem
+        }
+      
+     }
+     @media all and (max-width:579px){
+        .parent .items img{
+            width: 600px;
+        }
+     }
+     @media all and (max-width:668px){
+        .parent{
+        display: flex;
+        flex-wrap: wrap;
+        padding:15% 12%;
+           
+        }
+        .parent .items img{
+            width: 400px;
+            
+        }
+     }
+   
+</style>
+</head>
+<body id="bgcolor">
+    
+    <p>
+       <em class="our">Our</em>  <em class="store">Store</em>
+    </p> 
+    <div class="menu" id="menulist">
+    <ul >
+        <li>ALL</li>
+        <li>CAKES</li>
+        <li>CUPCAKES</li>
+        <li>SWEETS</li>
+        <li>DOUGHNUTS</li>
+    </ul>
+</div>
+   <form action="https://www.goggle.com/search" method="get" class="searchbox">
+    <button type="submit">🔍</button>
+    <input type="text" name="storelist" placeholder="item...."/>
+</form>
+    <section class="parent" id="image">
+    <figure class="items">
+        <img src="sweet item1.jpg" width="350" height="250" alt="Sweet Items">
+        <figcaption>Sweet Items <span class="money"> $5 </span></figcaption>
+    </figure>
+
+    <figure class="items">
+        <img src="cupcake2.jpg" width="350" height="250" alt="Cupcake Item">
+        <figcaption>Cupcake Item <span class="money"> $5 </span></figcaption>
+    </figure>
+
+    <figure class="items">
+        <img src="coke item.jpg" width="350" height="250" alt="Coke Item">
+        <figcaption>Coke Item <span class="money"> $5 </span></figcaption>
+    </figure>
+
+    <figure class="items">
+        <img src="doughnut.jpg" width="350" height="250" alt="Doughnut Item">
+        <figcaption>Doughnut Item<span class="money"> $5 </span></figcaption>
+    </figure>
+
+    <figure class="items">
+        <img src="sweet item.jpg" width="350" height="250" alt="Sweet Items">
+        <figcaption>Sweet Item <span class="money"> $5 </span></figcaption>
+    </figure>  
+    
+    <figure class="items">
+        <img src="cup cake1.jpg" width="350" height="250" alt="Cupcake Item">
+        <figcaption>Cupcake Item<span class="money"> $5 </span></figcaption>
+    </figure>
+    </section>
+   
+    <div class="features">
+   <h2> You can change the Background-color and Font-family of text</h3> 
+    <button type="button" name="btn" onclick="bg_color()" id="me"> Click me</button><br><br>
+
+    <h2> Click to reduce the opacity of the image</h3> 
+    <button type="button" onclick="reduce()"> Reduce</button>
+    </div>
+   
+
+    <script>
+        function bg_color(){
+        let myreturn = document.body;
+            myreturn.classList.toggle("return1");
+          
+
+
+
+    }
+
+     function reduce(){
+          let another = Array.from(document.getElementsByClassName("items"));
+           another.map(items=>{
+            another.classList.toggle("return2"); 
+           }) 
+         
+    }
+
+    </script>
+</body>
+</html>
